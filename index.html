@@ -2,26 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rakshitha Thanasekaran | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
-  <nav class="bg-teal-600 text-white p-4 flex justify-between">
-    <div class="text-xl font-bold">Rakshitha Thanasekaran</div>
-    <div class="space-x-4">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.pdf" target="_blank">Resume</a>
-      <a href="contact.html">Contact</a>
+
+  <!-- Navbar -->
+  <nav class="bg-teal-600 text-white p-4 fixed w-full top-0 z-50 shadow">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">Rakshitha Thanasekaran</div>
+      <div class="space-x-4">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
-  <main class="p-8">
-    <h1 class="text-4xl font-bold mb-4">Hi, I'm Rakshitha 👋</h1>
-    <p class="text-lg leading-relaxed max-w-xl">
-      I'm a Computer Science student at UVA passionate about full-stack development, data analytics, and solving real-world problems with code. I am seeking full-time positions post my graduation in Spring 2026.
-    </p>
+
+  <main class="pt-24 max-w-5xl mx-auto px-4 space-y-20">
+
+    <!-- About Section -->
+    <section id="about">
+      <h1 class="text-4xl font-bold mb-4">Hi, I'm Rakshitha 👋</h1>
+      <p class="text-lg">
+        I'm a Computer Science student at UVA passionate about full-stack development, data analytics, and solving real-world problems with code. I am seeking full-time positions post my graduation in Spring 2026.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="text-3xl font-bold mb-6">Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="border border-gray-300 p-4 rounded shadow-sm">
+          <h3 class="text-xl font-semibold">Haute Data – Research Project</h3>
+          <p class="text-sm mt-2">Implemented State Space Models to analyze a decade of fashion data and trained a predictive model for forecasting emerging fashion trends.<br><em>Skills: NumPy, Pandas</em></p>
+        </div>
+        <div class="border border-gray-300 p-4 rounded shadow-sm">
+          <h3 class="text-xl font-semibold">Get-to-Gather – Personal Project</h3>
+          <p class="text-sm mt-2">A calendar and scheduling app built using Figma, HTML, CSS, and JavaScript for organizing events and collaborating with others.</p>
+          <a href="https://github.com/matanmorse/GWC2024" target="_blank" class="text-teal-600 underline text-sm">View on GitHub</a>
+        </div>
+        <div class="border border-gray-300 p-4 rounded shadow-sm">
+          <h3 class="text-xl font-semibold">Art Supplies Lending – Course Project</h3>
+          <p class="text-sm mt-2">Developed as part of UVA’s CS 3240 CLA initiative for lending and borrowing shared art materials. Features inventory tracking and lending history.</p>
+          <a href="https://github.com/RakshithaThanasekaran/ArtSuppliesLending/tree/main" target="_blank" class="text-teal-600 underline text-sm">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2 class="text-3xl font-bold mb-4">Resume</h2>
+      <a href="resume.pdf" target="_blank" class="inline-block bg-teal-600 text-white px-6 py-2 rounded shadow hover:bg-teal-700">View Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <p class="mb-2">📧 Email: <a href="mailto:trakshitha10@gmail.com" class="text-teal-600 underline">trakshitha10@gmail.com</a></p>
+      <p class="mb-2">🔗 LinkedIn: <a href="https://www.linkedin.com/in/rakshitha-thanasekaran" target="_blank" class="text-teal-600 underline">linkedin.com/in/rakshitha-thanasekaran</a></p>
+    </section>
+
   </main>
+
+  <footer class="text-center text-sm text-gray-500 py-8 mt-16">
+    © 2025 Rakshitha Thanasekaran
+  </footer>
+
 </body>
 </html>
